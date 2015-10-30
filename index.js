@@ -12,6 +12,7 @@ function getPrice(symbol, callback) {
       var jsonString = parseBody(body);
       // turn string into JSON object
       var parsed = JSON.parse(jsonString)
+      console.log(jsonString)
       callback(null, parsed["LastPrice"])
     }
   });
